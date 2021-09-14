@@ -1,51 +1,32 @@
-const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
-
-await lib.discord.channels['@0.1.2'].messages.create({
-  "channel_id": `${context.params.event.channel_id}`,
-  "content": "",
-  "tts": false,
-  "components": [
-    {
-      "type": 1,
-      "components": [
-        {
-          "custom_id": `row_0_select_1`,
-          "options": [],
-          "min_values": 1,
-          "max_values": 1,
-          "type": 3
-        }
-      ]
-    }
-  ],
+{
+  "content": null,
   "embeds": [
     {
-      "type": "rich",
-      "title": `Regras`,
-      "description": `Mesmo sendo um servidor privado, destinado apenas a amigos, ainda assim são necessárias regras para que o servidor não vire um puteiro assim como aconteceu com o Sake, as regras estarão listadas abaixo:`,
-      "color": 0x0037ff,
+      "title": "Regras",
+      "description": "Mesmo sendo um servidor privado, destinado apenas a amigos, ainda assim são necessárias regras para que o servidor não vire um puteiro assim como aconteceu com o Sake, as regras estarão listadas abaixo:",
+      "color": 10027247,
       "fields": [
         {
-          "name": `#1`,
-          "value": `> Sem spammar em qualquer chat que não seja o #『🚫』sem-regras-o-retorno`
+          "name": "#1",
+          "value": "> Sem spammar em qualquer chat que não seja o #『🚫』sem-regras-o-retorno"
         },
         {
-          "name": `#2`,
-          "value": `> Sem tretinha no servidor, esse foi o ponto principal que fez o Sake acabar e eu não quero que se repita`
+          "name": "#2",
+          "value": "> Sem tretinha no servidor, esse foi o ponto principal que fez o Sake acabar e eu não quero que se repita"
         },
         {
-          "name": `#3`,
-          "value": `> Às pessoas com cargo mais alto, respeitem as opiniões de todos e não mudem algo significante no servidor sem que a mudança seja de consenso geral`
+          "name": "#3",
+          "value": "> Às pessoas com cargo mais alto, não mudem algo significante no servidor sem que a mudança seja de consenso geral"
         },
         {
-          "name": `#4`,
-          "value": `> Não seja um babaca`
+          "name": "#4",
+          "value": "> Não seja um babaca"
         },
         {
-          "name": `#5 `,
-          "value": `> Respeite as opiniões e gostos pessoais de todos`
+          "name": "#5",
+          "value": "> Respeite as opiniões e gostos pessoais de todos"
         }
       ]
     }
   ]
-});
+}
